@@ -46,6 +46,10 @@
     text-decoration: none; /* Fjerner understregningen */
   }
 
+  a:hover {
+    text-decoration: underline;
+  }
+
   .dropdown {
     position: relative;
     display: flex;
@@ -110,7 +114,7 @@
 
   #main-footer {
     padding: 60px;
-    margin-top: 70px;
+    margin-top: 50px;
   }
   
   #footer-container {
