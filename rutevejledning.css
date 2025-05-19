@@ -1,0 +1,33 @@
+.map-section {
+    padding: 60px 5%;
+    background-color: #fef5ea;
+    text-align: center;
+    font-family: "Poiret One", sans-serif;
+  }
+  
+  .map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-left: 60px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+  }

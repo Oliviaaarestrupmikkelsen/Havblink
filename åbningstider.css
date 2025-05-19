@@ -1,0 +1,63 @@
+
+  .store-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Poiret One", sans-serif;
+  }
+  
+  .store-hero {
+    position: relative;
+    background-image: url('images/flaskerpaahylder.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .store-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fef5ea;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+  }
+  
+  .store-box {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Tilføjer en grå streg rundt om boksen */
+    padding: 20px;
+  }
+  
+  .store-box h2 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    padding: 0 100px;
+    font-weight: lighter;
+  }
+  
+  .store-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 50px 100px;
+  }
+  
+  .cta-btn {
+    padding: 10px 20px;
+    background-color: #fce9da;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+  }
+  
+  .cta-btn:hover {
+    text-decoration: underline;
+  }

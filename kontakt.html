@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="kontakt.css">
+    <title>Kontakt</title>
+</head>
+
+<body>
+
+    <header id="main-header">
+        <nav id="nav-bar">
+          <!-- Venstre menu -->
+          <ul id="nav-left">
+            <li class="dropdown">
+              <span class="label">Vingården</span>
+              <input type="checkbox" id="toggle-v1" hidden />
+              <label class="dropdown-toggle" for="toggle-v1">▾</label>
+              <ul class="dropdown-menu">
+                <li><a href="#">Hvorfor dansk vin?</a></li>
+                <li><a href="#">Mød vinbonden</a></li>
+                <li><a href="#">Vores historie</a></li>
+              </ul>
+            </li>
+    
+            <li class="dropdown">
+              <span class="label">Bliv inspireret</span>
+              <input type="checkbox" id="toggle-v2" hidden />
+              <label class="dropdown-toggle" for="toggle-v2">▾</label>
+              <ul class="dropdown-menu">
+                <li><a href="#">Alle hvidvine</a></li>
+                <li><a href="#">Vinfinder</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">Gaveideer</a></li>
+                <li><a href="#">Vores favoritter</a></li>
+              </ul>
+            </li>
+    
+            <li class="dropdown">
+              <span class="label">Oplev</span>
+              <input type="checkbox" id="toggle-v3" hidden />
+              <label class="dropdown-toggle" for="toggle-v3">▾</label>
+              <ul class="dropdown-menu">
+                <li><a href="#">Udflugter & gruppeture</a></li>
+                <li><a href="#">Rundvisninger</a></li>
+                <li><a href="#">Firmamøder & arrangementer</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Kontakt os</a></li>
+              </ul>
+            </li>
+          </ul>
+    
+          <!-- Logo -->
+          <div id="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Logo med drueklase" />
+            </a>
+          </div>
+    
+          <!-- Højre menu -->
+          <ul id="nav-right">
+            <li class="dropdown">
+              <span class="label">Gårdbutik</span>
+              <input type="checkbox" id="toggle-h1" hidden />
+              <label class="dropdown-toggle" for="toggle-h1">▾</label>
+              <ul class="dropdown-menu">
+                <li><a href="#">Åbningstider</a></li>
+                <li><a href="#">Kort & rutevejledning</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="shop.html" class="label">Shop</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="kurv.html" class="label">Kurv</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <nav class="breadcrumb">
+        <p>Oplev</p>
+        <span class="separator">›</span>
+        <span class="current">Kontakt</span>
+      </nav>
+
+
+    <section class="contact-section">
+        <form class="contact-form">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstname">Fornavn</label>
+                <input type="text" id="firstname" name="firstname" />
+            </div>
+            <div class="form-group">
+                <label for="lastname">Efternavn</label>
+                <input type="text" id="lastname" name="lastname" />
+            </div>
+        </div>
+  
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="category">Kategori</label>
+          <select id="category" name="category">
+            <option value="">Vælg kategori</option>
+            <option value="booking">Udflugter & gruppeture</option>
+            <option value="info">Rundvisninger</option>
+            <option value="info">Firmamøder & arrangementer</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="message">Besked</label>
+          <textarea id="message" name="message" rows="6"></textarea>
+        </div>
+      </div>
+  
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+  </section>
+
+  <footer id="main-footer">
+    <div id="footer-container">
+      <!-- Nyhedsbrev -->
+      <div class="footer-section">
+        <h4>Tilmeld dig vores nyhedsbrev</h4>
+        <input type="email" placeholder="Indtast email" />
+        <button>Tilmeld</button>
+      </div>
+  
+      <!-- Kontakt -->
+      <div class="footer-section">
+        <h4>Besøg os</h4>
+        <p>Gammel Skårupvej 155</p>
+        <p>5700 Svendborg</p>
+        <p>+12 34 56 78</p>
+      </div>
+  
+      <!-- SoMe -->
+      <div class="footer-section">
+        <h4>Følg med på rejsen</h4>
+        <div class="social-icons">
+          <a href="#"><img src="images/instagram.svg" alt="Instagram ikon" /></a>
+          <a href="#"><img src="images/facebook.svg" alt="Facebook ikon" /></a>
+        </div>
+      </div>
+    </div>
+</footer>
+</body>
