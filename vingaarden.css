@@ -36,3 +36,36 @@
     margin: 0px 100px;
     margin-bottom: 70px;
   }
+
+  /* Tablet */
+@media (max-width: 768px) {
+    .split-container {
+      flex-direction: column;
+    }
+  
+    .split-box:nth-child(2) {
+      display: none;
+    }
+  
+    .split-box img {
+      height: auto;
+      max-height: 400px;
+    }
+
+    .text-section p {
+      margin: 0 50px;
+      padding-bottom: 50px;
+    }
+  }
+  
+  /* Mobil */
+  @media (max-width: 420px) {
+    .text-section p {
+      margin: 0 20px;
+    }
+  
+    .text-section h2 {
+      font-size: 1.2rem;
+      margin: 30px 0;
+    }
+  }

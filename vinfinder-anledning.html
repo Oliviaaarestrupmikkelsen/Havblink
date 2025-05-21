@@ -20,9 +20,9 @@
               <input type="checkbox" id="toggle-v1" hidden />
               <label class="dropdown-toggle" for="toggle-v1">▾</label>
               <ul class="dropdown-menu">
-                <li><a href="#">Hvorfor dansk vin?</a></li>
-                <li><a href="#">Mød vinbonden</a></li>
-                <li><a href="#">Vores historie</a></li>
+                <li><a href="danskvin.html">Hvorfor dansk vin?</a></li>
+                <li><a href="vinbonden.html">Mød vinbonden</a></li>
+                <li><a href="voreshistorie.html">Vores historie</a></li>
               </ul>
             </li>
     
@@ -31,11 +31,11 @@
               <input type="checkbox" id="toggle-v2" hidden />
               <label class="dropdown-toggle" for="toggle-v2">▾</label>
               <ul class="dropdown-menu">
-                <li><a href="#">Alle hvidvine</a></li>
-                <li><a href="#">Vinfinder</a></li>
-                <li><a href="#">Bestsellers</a></li>
-                <li><a href="#">Gaveideer</a></li>
-                <li><a href="#">Vores favoritter</a></li>
+                <li><a href="allehvidvine.html">Alle hvidvine</a></li>
+                <li><a href="vinfinder.html">Vinfinder</a></li>
+                <li><a href="bestsellers.html">Bestsellers</a></li>
+                <li><a href="gaveideer.html">Gaveideer</a></li>
+                <li><a href="voresfavoritter.html">Vores favoritter</a></li>
               </ul>
             </li>
     
@@ -44,14 +44,46 @@
               <input type="checkbox" id="toggle-v3" hidden />
               <label class="dropdown-toggle" for="toggle-v3">▾</label>
               <ul class="dropdown-menu">
-                <li><a href="#">Udflugter & gruppeture</a></li>
-                <li><a href="#">Rundvisninger</a></li>
-                <li><a href="#">Firmamøder & arrangementer</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Kontakt os</a></li>
+                <li><a href="udflugter.html">Udflugter & gruppeture</a></li>
+                <li><a href="rundvisninger.html">Rundvisninger</a></li>
+                <li><a href="firmamøder.html">Firmamøder & arrangementer</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="kontakt.html">Kontakt os</a></li>
               </ul>
             </li>
           </ul>
+    
+          <!-- Burger-menu -->
+          <div id="burger-menu">
+            <input type="checkbox" id="burger-toggle" hidden />
+            <label for="burger-toggle" id="burger-icon">
+              <img src="images/burger.png" alt="Burger menu ikon"/>
+            </label>
+    
+            <ul id="mobile-menu">
+              <li class="menu-section-title">Vingården</li>
+              <li><a href="danskvin.html">Hvorfor dansk vin?</a></li>
+              <li><a href="vinbonden.html">Mød vinbonden</a></li>
+              <li><a href="voreshistorie.html">Vores historie</a></li>
+    
+              <li class="menu-section-title">Bliv inspireret</li>
+              <li><a href="vinfinder.html">Vinfinder</a></li>
+              <li><a href="bestsellers.html">Bestsellers</a></li>
+              <li><a href="gaveideer.html">Gaveideer</a></li>
+              <li><a href="voresfavoritter.html">Vores favoritter</a></li>
+    
+              <li class="menu-section-title">Shop</li>
+              <li><a href="allehvidvine.html">Alle hvidvine</a></li>
+              <li><a href="åbningstider.html">Gårdbutik</a></li>
+    
+              <li class="menu-section-title">Oplev</li>
+              <li><a href="udflugter.html">Udflugter & gruppeture</a></li>
+              <li><a href="rundvisninger.html">Rundvisninger</a></li>
+              <li><a href="firmamøder.html">Firmamøder & arrangementer</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="kontakt.html">Kontakt os</a></li>
+              </ul>
+          </div>  
     
           <!-- Logo -->
           <div id="logo">
@@ -67,33 +99,43 @@
               <input type="checkbox" id="toggle-h1" hidden />
               <label class="dropdown-toggle" for="toggle-h1">▾</label>
               <ul class="dropdown-menu">
-                <li><a href="#">Åbningstider</a></li>
-                <li><a href="#">Kort & rutevejledning</a></li>
+                <li><a href="åbningstider.html">Åbningstider</a></li>
+                <li><a href="rutevejledning.html">Kort & rutevejledning</a></li>
               </ul>
             </li>
-
+    
             <li class="dropdown">
                 <a href="shop.html" class="label">Shop</a>
             </li>
-
+    
             <li class="dropdown">
-                <a href="kurv.html" class="label">Kurv</a>
+                <a href="kurv.html" class="label">Kurv
+                  <img src="images/kurv.png" alt="Kurv"/>
+                </a>
             </li>
           </ul>
+    
+          <!--Kurv-->
+          <li id="cart">
+            <a href="kurv.html" class="label">
+              <img src="images/kurv.png" alt="Kurv"/>
+            </a>
+          </li>
+    
         </nav>
       </header>
 
     <nav class="breadcrumb">
         <p>Bliv inspireret</p>
         <span class="separator">›</span>
-        <a>Vinfinder</a>
+        <a href="vinfinder.html">Vinfinder</a>
         <span class="separator">›</span>
         <span class="current">Anledning</span>
       </nav>
 
         <div class="alternating-item">
             <div class="item-image">
-                <img src="images/terassehygge.jpg" alt="Vin på terassen">
+                <img src="images/terasse.jpg" alt="Vin på terassen">
             </div>
               <div class="item-content-center">
                 <h3>Solrig sommeraften / terrassehygge</h3>

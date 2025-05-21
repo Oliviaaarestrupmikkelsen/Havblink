@@ -40,9 +40,8 @@
     margin: 0 20px 25px;
   }
   
-  .cta-btn {
+  .cta-btn, .cta-btn:link, .cta-btn:visited {
     margin-top: auto; /* Skubber knappen til bunden */
-    padding: 10px 20px;
     background-color: #fce9da;
     border: none;
     cursor: pointer;
@@ -50,8 +49,53 @@
     font-size: 1rem;
     width: 150px;
     height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .cta-btn:hover {
     text-decoration: underline;
+  }
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    .experience-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .experience-card img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+  }
+  
+  /* Mobil */
+  @media (max-width: 420px) {
+    .experience-section {
+      padding: 40px 3% 0 3%;
+    }
+  
+    .experience-card {
+      padding: 15px;
+    }
+  
+    .experience-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+  
+    .experience-card p {
+      font-size: 0.95rem;
+      margin: 0 10px 20px;
+    }
+  
+    .cta-btn {
+      width: 50%;
+      font-size: 1rem;
+      height: 45px;
+      color: black;
+    }
   }

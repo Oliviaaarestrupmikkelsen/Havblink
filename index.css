@@ -56,6 +56,75 @@ html, body {
     margin: 90px 0px;
   }
 
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px; /* Luft ude i siderne */
+    gap: 60px; /* Ens luft mellem bokse */
+    margin-top: 90px;
+  }
+  
+  .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button-card {
+    padding: 10px 20px;
+    background-color: #FAECD6;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    line-height: 30px; /* Matcher knaphøjden for at centrere teksten vertikalt */
+    text-align: center;
+  }
+
+  .cta-button-card:hover {
+    text-decoration: underline; 
+  }
+
+  #cta-wrapper {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  #cta-main {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #FAECD6;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 350px;
+    height: 70px;
+    line-height: 50px; /* Matcher knaphøjden for at centrere teksten vertikalt */
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  #cta-main:hover {
+    text-decoration: underline; 
+  }
+
+
   .split-container {
     display: flex;
   }
@@ -97,69 +166,111 @@ html, body {
     text-decoration: underline; 
   }
 
-  .card-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 60px; /* Luft ude i siderne */
-    gap: 60px; /* Ens luft mellem bokse */
-    margin-top: 90px;
-  }
-  
-  .card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button-card {
-    padding: 10px 20px;
-    background-color: #FAECD6;
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    line-height: 30px; /* Matcher knaphøjden for at centrere teksten vertikalt */
-    text-align: center;
-  }
 
-  .cta-button-card:hover {
-    text-decoration: underline; 
-  }
 
-  #cta-wrapper {
-    text-align: center;
-    margin-top: 40px;
+/* Tablet */
+@media (max-width: 768px) {
+    .hero {
+      height: auto;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 80px 20px;
+      text-align: right;
+      margin-top: 50px;
+    }
+  
+    .hero-content {
+      padding: 0;
+      max-width: 100%;
+    }
+  
+    .hero h1 {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      max-width: 260px;
+    }
+  
+    #hero-button {
+      padding: 15px 25px;
+      font-size: 1rem;
+      width: auto;
+    }
+  
+    #citat {
+      margin: 60px 30px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  
+    .card-container {
+      flex-direction: column;
+      gap: 50px;
+      padding: 0 30px;
+      margin-top: 60px;
+    }
+  
+    .card {
+      display: none;
+    }
+  
+    .card:first-child {
+      display: flex;
+    }
+  
+    .card img {
+      max-height: 400px;
+    }
+  
+    .cta-button-card {
+      width: 140px;
+      height: 45px;
+      font-size: 15px;
+    }
+  
+    #cta-main {
+      width: 280px;
+      height: 60px;
+      font-size: 18px;
+      line-height: 35px;
+    }
+  
+    .split-container {
+      flex-direction: column;
+      gap: 50px;
+    }
+  
+    .split-box img {
+      height: 350px;
+    }
+  
+    .overlay {
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .cta-button {
+      width: 140px;
+      height: 45px;
+      font-size: 15px;
+    }
   }
   
-  #cta-main {
-    display: inline-block;
-    padding: 14px 28px;
-    background-color: #FAECD6;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    width: 350px;
-    height: 70px;
-    line-height: 50px; /* Matcher knaphøjden for at centrere teksten vertikalt */
-    text-align: center;
+  
+  /* Mobil */
+  @media (max-width: 420px) {
+    .hero h1 {
+        font-size: 1.4rem;
+        max-width: 200px;
+      }
+
+    #hero-button {
+        padding: 15px 25px;
+        font-size: 0.9rem;
+        width: 120px;
+    }
   }
   
-  #cta-main:hover {
-    text-decoration: underline; 
-  }
+  
+  

@@ -44,6 +44,7 @@
 
   a {
     text-decoration: none; /* Fjerner understregningen */
+    color: #000;
   }
 
   a:hover {
@@ -55,6 +56,10 @@
     display: flex;
     align-items: center;
     gap: 5px;
+  }
+
+  .dropdown img{
+    display:none;
   }
   
   .label {
@@ -191,4 +196,179 @@
     width: 36px;
     height: 36px;
     padding: 4px;
+  }
+
+
+
+  /*  Burger menu  */
+
+  #burger-menu {
+    display: none;
+  }
+
+  #cart {
+    display: none;
+  }
+  
+  #burger-icon img{
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+  }
+
+  #cart img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    margin-right: 10px;
+
+  }
+  
+  #mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    list-style: none;
+    z-index: 1000;
+  }
+  
+  #mobile-menu li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #burger-toggle:checked + label + #mobile-menu {
+    display: block;
+  }
+
+  .menu-section-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 12px 0 6px;
+    color: #333;
+    text-transform: uppercase;
+    border-top: 1px solid #eee;
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    #nav-bar {
+      flex-direction: row;
+      align-items: center;
+      padding: 0 20px;
+    }
+  
+    #nav-left {
+      display: none;
+    }
+
+    #nav-right {
+      display: none;
+    }
+  
+    #logo {
+      position: static;
+      transform: none;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+  
+    #cart {
+    display:block;
+    }
+  
+    #burger-menu {
+      display: block;
+    }
+
+    #mobile-menu {
+      font-size: 14px;
+    }
+
+    #mobile-menu li {
+      padding: 15px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .menu-section-title {
+      font-size: 1rem;
+      padding: 12px 0 6px;
+      color: #333;
+      text-transform: uppercase;
+      border-top: 1px solid #eee;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: lighter;
+    }
+
+    .breadcrumb {
+      margin: 80px 0px 40px 40px;
+    }
+
+    #footer-container {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-section {
+      max-width: 100%;
+    }
+  
+    .footer-section input[type="email"],
+    .footer-section button {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  
+   /* Mobil */
+  @media (max-width: 420px) {
+    #nav-bar {
+      padding: 0px 10px;
+    }
+  
+    #burger-icon {
+      font-size: 22px;
+    }
+
+  
+    #logo img {
+      max-width: 120px;
+      height: auto;
+    }
+
+    .breadcrumb {
+      margin: 70px 0px 30px 30px;
+    }
+
+    #main-footer {
+      padding: 30px 20px;
+    }
+  
+    .footer-section h4 {
+      font-size: 11px;
+    }
+  
+    .footer-section p, .footer-section a,
+    .footer-section input[type="email"],
+    .footer-section button {
+      font-size: 12px;
+      border-radius: 0;
+      color: #000;
+    }
+  
+    .social-icons img {
+      width: 28px;
+      height: 28px;
+    }
   }

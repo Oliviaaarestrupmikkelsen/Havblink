@@ -21,8 +21,8 @@
 }
 
 .item-image img {
-  max-height: 500px;
   width: 100%;
+  max-height: 500px;
   object-fit: contain;
   display: block;
 }
@@ -57,7 +57,7 @@
 
 .cta-btn {
   padding: 10px 20px;
-  background-color: #fce9da;
+  background-color: #FAECD6;
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -72,4 +72,60 @@
 
 .alternating-item:nth-child(even) {
   flex-direction: row-reverse; /* Byt billede og tekst for hver anden */
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .alternating-item {
+    flex-direction: column !important;
+  }
+
+  .item-content,
+  .item-content-center {
+    background-color: transparent; /* sørg for at den ikke overskriver alternating-item */
+  }
+
+  .item-image,
+  .item-content,
+  .item-content-center {
+    width: 100%;
+  }
+
+  .item-content p,
+  .item-content-center p {
+    margin: 0 40px 40px 40px;
+  }
+
+  .cta-btn {
+    margin-bottom: 70px;
+  }
+}
+
+/* Mobil */
+@media screen and (max-width: 420px) {
+  .item-content p,
+  .item-content-center p {
+    margin: 0 20px 30px 20px;
+    font-size: 0.95rem;
+  }
+
+  .item-content h3,
+  .item-content-center h3 {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 250px;
+    font-size: 1rem;
+    color: black;
+  }
+
+  .item-image img {
+    max-height: 300px;
+    object-fit: contain;
+  }
 }

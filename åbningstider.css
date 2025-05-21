@@ -30,7 +30,7 @@
   .store-box {
     flex: 1 1 50%;
     box-sizing: border-box;
-    border: 1px solid #ccc; /* Tilføjer en grå streg rundt om boksen */
+    border: 0.5px solid #ccc; /* Tilføjer en grå streg rundt om boksen */
     padding: 20px;
   }
   
@@ -60,4 +60,62 @@
   
   .cta-btn:hover {
     text-decoration: underline;
+  }
+
+    /* Tablet */
+  @media (max-width: 768px) {
+    .store-info {
+      flex-direction: column;
+    }
+
+    .store-hero {
+        height: 45vh;
+      }
+  
+    .store-box h2 {
+      padding: 0px 10px 10px 10px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    .store-box p {
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+  
+    .cta-btn {
+      display: block;
+      margin: 10px auto;
+      margin-bottom: 50px;
+    }
+  }
+
+    /* Mobil */
+  @media (max-width: 420px) {
+    .store-box {
+      padding: 15px 20px;
+    }
+
+    .store-hero {
+        height: 30vh;
+      }
+  
+    .store-box h2 {
+      font-size: 1.2rem;
+    }
+  
+    .store-box p {
+      font-size: 1rem;
+      padding: 10px 0;
+    }
+  
+    .cta-btn {
+      font-size: 0.95rem;
+      width: 50%;
+      height: 45px;
+      color: black;
+    }
   }
