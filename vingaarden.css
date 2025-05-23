@@ -55,6 +55,7 @@
     .text-section p {
       margin: 0 50px;
       padding-bottom: 50px;
+      text-align: left;
     }
   }
   
@@ -62,10 +63,11 @@
   @media (max-width: 420px) {
     .text-section p {
       margin: 0 20px;
+      font-size: 1rem;
     }
   
     .text-section h2 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin: 30px 0;
     }
   }
